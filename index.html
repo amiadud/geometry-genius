@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="w-11/12 m-auto my-5 ">
+      <div class="flex justify-between p-5 bg-sky-200 rounded-lg">
+        <div>
+          <h2 class="text-4xl text-gray-900 font-bold">Interactive</h2>
+          <p class="text-4xl text-gray-400">Geometry Genius </p>
+        </div>
+        <div class="flex items-center">
+          <button class="btn btn-primary px-9 bg-sky-400 border-none text-black hover:text-white">Blog</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="w-11/12 m-auto my-5  ">  
+        <div class="flex gap-5 ">
+          <div class="grid grid-cols-3 gap-4">
+            <div class="p-10 rounded-lg border-gray-200 border-2 hover:bg-teal-100 ">
+              <div class="flex justify-center">
+                <img src="./images/triangle.png" alt="">
+              </div>
+              <div class="flex justify-center ">
+                <div class="space-y-2 my-3">
+                  <h2 class="text-center text-3xl font-bold">Triangle</h2>
+                  <p class="text-center">Area (A) = 0.5 x b x h</p>
+                  <div class="flex gap-4 ">
+                    <input class="w-20 bg-gray-200 border-none  rounded px-2" type="text" name="" id="triangle-base" placeholder="base"> cm
+                    <input class="w-20 bg-gray-200 border-none rounded px-2" type="text" name="" id="triangle-height" placeholder="height"> cm
+                  </div>  
+                </div>    
+              </div>
+              <p>Area: <span id="triangle-area"></span></p>
+              <button class="btn btn-basic w-full my-4 border-none bg-sky-500 text-white hover:text-black" id="triangle-button">Calculate</button>
+            </div>
+            <div class="p-10  rounded-lg border-gray-200 border-2">
+              <div class="flex justify-center">
+                <img src="./images/rectangle.png" alt="">
+              </div>
+              <div class="flex justify-center ">
+                <div class="space-y-2 my-3">
+                  <h2 class="text-center text-3xl font-bold">Rectangle</h2>
+                  <p class="text-center">Area (A) = w x l</p>
+                  <div class="flex gap-4 ">
+                    <input class="w-20 bg-gray-200 border-none rounded px-2" type="text" name="" id="rectangle-width" placeholder="width"> cm
+                    <input class="w-20 bg-gray-200 border-none rounded px-2" type="text" name="" id="rectangle-length" placeholder="length"> cm
+                  </div>
+                  
+                </div>
+              </div>
+              <p>Area: <span id="rectangle-area"></span></p>
+              <button class="btn btn-basic w-full my-4 bg-sky-500 text-white hover:text-black" id="rectangle-button">Calculate</button>
+            </div>
+            <div class="p-10  rounded-lg border-gray-200 border-2">
+              <div class="flex justify-center">
+                <img src="./images/parallelogram.png" alt="">
+              </div>
+              <div class="flex justify-center ">
+                <div class="space-y-2 my-3">
+                  <h2 class="text-center text-3xl font-bold">Parallelogram</h2>
+                  <p class="text-center">Area (A) = b x h</p>
+                  <div class="flex gap-4 ">
+                    <input class="w-20 bg-gray-200 border-none rounded px-2" type="text" name="" id="parallelogram-base" placeholder="base"> cm
+                    <input class="w-20 bg-gray-200 border-none rounded px-2" type="text" name="" id="parallelogram-height" placeholder="height"> cm
+                  </div>
+                </div>
+              </div>
+              <p>Area: <span id="parallelogram-area"></span></p>
+              <button class="btn btn-basic w-full my-4 bg-sky-500 text-white hover:text-black" id="parallelogram-button">Calculate</button>
+            </div>
+            
+            <div class="p-10 rounded-lg border-gray-200 border-2 ">
+              <div class="flex justify-center">
+                <img src="./images/rhombus.png" alt="">
+              </div>
+              <div class="flex justify-center ">
+                <div class="space-y-2 my-3">
+                  <h2 class="text-center text-3xl font-bold">Rhombus</h2>
+                  <p class="text-center ">Area (A) = 0.5 * d1 * d2</p>
+                  <div class="flex gap-4 ">
+                    <input class="w-20 bg-gray-200 border-none rounded px-2" type="text" name="" id="rhombus-base" placeholder="base"> cm
+                    <input class="w-20 bg-gray-200 border-none rounded px-2" type="text" name="" id="rhombus-height"placeholder="height"> cm
+                  </div>
+                </div>
+              </div>
+              <p>Area: <span id="rhombus-area"></span></p>
+              <button class="btn btn-basic w-full my-4 bg-sky-500 text-white hover:text-black" id="rhombus-button">Calculate</button>
+            </div>
+            <div class="p-10 rounded-lg border-gray-200 border-2 ">
+              <div class="flex justify-center">
+                <img src="./images/pentagon.png" alt="">
+              </div>
+              <div class="flex justify-center ">
+                <div class="space-y-2 my-3">
+                  <h2 class="text-center text-3xl font-bold">Pentagon</h2>
+                  <p class="text-center">Area (A) = 0.5 x p x b </p>
+                  <div class="flex gap-4 ">
+                    <input class="w-20 bg-gray-200 border-none rounded px-2" type="text" name="" id="pentagon-place" placeholder="place"> cm
+                    <input class="w-20 bg-gray-200 border-none rounded px-2" type="text" name="" id="pentagon-base" placeholder="base"> cm
+                  </div>
+                  
+                </div>
+              </div>
+              <p>Area: <span id="pentagon-area"></span></p>
+              <button class="btn btn-basic w-full my-4 bg-sky-500 text-white hover:text-black" id="pentagon-button">Calculate</button>
+            </div>
+            <div class="p-10 rounded-lg border-gray-200 border-2 ">
+              <div class="flex justify-center">
+                <img src="./images/ellipse.png" alt="">
+              </div>
+              <div class="flex justify-center ">
+                <div class="space-y-2 my-3">
+                  <h2 class="text-center text-3xl font-bold">Ellipse</h2>
+                  <p class="text-center">Area (A) = πab</p>
+                  <div class="flex gap-4 ">
+                    <input class="w-20 bg-gray-200 border-none rounded px-2" type="text" name="" id="ellipse-a-axix" placeholder="A-Axis"> cm
+                    <input class="w-20 bg-gray-200 border-none rounded px-2" type="text" name="" id="ellipse-b-axix" placeholder="B-Axis"> cm
+                  </div>  
+                </div>
+              </div>
+              <p>Area: <span id="ellipse-area"></span></p>
+              <button class="btn btn-basic w-full my-4 bg-sky-500 text-white hover:text-black" id="ellipse-button">Calculate</button>
+            </div>
+          </div>
+          <div class=" flex-1 w-2/3">
+            <div class="p-5 rounded-lg border-gray-200 border-2 h-2/5 ">
+              <h2 class="text-2xl text-center font-semibold">Area Calculation</h2>
+              <div id="calculation-entry"></div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+
+    </main>
+    <script src="scripts/area-calculator.js"></script>
+</body>
+
+</html>
