@@ -89,6 +89,7 @@ function addtoCalculationEntry(areaType, area){
 
     const count = calculationEntry.childElementCount;
     const li = document.createElement('li');
+    const border = document.createElement('border');
     li.classList.add('my-4');
     li.innerHTML = `${count + 1}  ${areaType} ${area} cm <sup>2</sup> <button class="btn btn-success"> Convert </button>`;
     calculationEntry.appendChild(li);
