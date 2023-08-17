@@ -53,7 +53,7 @@ pentagonButton.addEventListener('click', function(){
     const pentagonArea = 0.5 * pentagonPlace * pentagonBase;
     getElementInnerTextById('pentagon-area',pentagonArea);
 
-    addtoCalculationEntry('Pentagon:',area);
+    addtoCalculationEntry('Pentagon:',pentagonArea);
 
 })
 
@@ -65,7 +65,7 @@ ellipseButton.addEventListener('click', function(){
     const decimalellipse = ellipseArea.toFixed(2);
     getElementInnerTextById('ellipse-area',decimalellipse);
 
-    addtoCalculationEntry('Ellipse:',area);
+    addtoCalculationEntry('Ellipse:',decimalellipse);
 
 })
 
